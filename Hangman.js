@@ -52,6 +52,14 @@ class Hangman{
     }
 
     recalculateStatus(){
+        const Finished = this.word.every((letter) => this.guessedLetter.includes(letter))
 
+        if(this.remainingGuess === 0){
+            this.status = 'Failed'
+        }else if(Finished){
+            this.status = 'Finished'
+        }else{
+            this.status = 'Playing'
+        }
     }
 }
