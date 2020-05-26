@@ -25,7 +25,7 @@ class Hangman{
         this.recalculateStatus()
     }   
 
-    getPuzzle(){
+    get getPuzzle(){
 
         let puzzle = ''
 
@@ -40,7 +40,7 @@ class Hangman{
         return puzzle
     }
 
-    getStatusMessage(){
+    get getStatusMessage(){
         
         if(this.status === 'playing'){
             return `Remaining Guess: ${this.remainingGuess}`
