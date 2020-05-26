@@ -7,6 +7,6 @@ window.addEventListener('keypress', (e) => {
     const guess = String.fromCharCode(e.charCode)
     word.makeGuess(guess)
 
-    puzzleText.textContent = word.getPuzzle()
-    remguess.textContent = word.getStatusMessage()
+    puzzleText.textContent = word.getPuzzle
+    remguess.textContent = word.getStatusMessage
 })
